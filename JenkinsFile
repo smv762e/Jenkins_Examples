@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building app Sergio"
+            }
+        }
+        stage('Developing') {
+            steps {
+                echo "Developing app Sergio"
+            }
+        }
+        stage('Sleeping') {
+            steps {
+                sleep 30
+                echo "Sleeping"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Testing app Sergio"
+            }
+        }
+    }
+}
